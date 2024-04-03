@@ -12,28 +12,46 @@ docker images
 docker run -d -p8080:80 hello-docker
 
 docker ps
+
 docker stop 833611e99274
+
 docker start 833611e99274
+
 docker stop 833611e99274
+
 docker start 833611e99274 --name hello_world_docker
+
   unknown flag: --name
+  
   See 'docker start --help'.
+  
 docker rename busy_clarke hello_world_docker
+
 docker start hello_world_docker
+
 docker ps
+
 CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                  NAMES
 833611e99274   hello-docker   "/docker-entrypoint.…"   4 minutes ago   Up 4 seconds   0.0.0.0:8080->80/tcp   hello_world_d
 
 ---------------------------------------------------------------------------------------------------------------
 
 PS E:\DOCKER\Docker-practice-demo-01> docker ps
+
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
 PS E:\DOCKER\Docker-practice-demo-01>
+
 PS E:\DOCKER\Docker-practice-demo-01> docker build -t hello-docker .
+
 [+] Building 0.6s (7/7) FINISHED                                                                 docker:default
+
  => [internal] load build definition from Dockerfile                                                       0.1s
+ 
  => => transferring dockerfile: 88B                                                                        0.0s
+ 
  => [internal] load metadata for docker.io/library/nginx:latest                                            0.0s
+ 
  => [internal] load .dockerignore                                                                          0.1s
  => => transferring context: 2B                                                                            0.0s
  => [internal] load build context                                                                          0.1s
