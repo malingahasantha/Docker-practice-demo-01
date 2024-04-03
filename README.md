@@ -4,9 +4,13 @@ Practice Docker Projects
 Below are the commands run in terminal
 
 docker ps
+
 docker build -t hello-docker .
+
 docker images
+
 docker run -d -p8080:80 hello-docker
+
 docker ps
 docker stop 833611e99274
 docker start 833611e99274
